@@ -17,7 +17,7 @@ public class SearchRange {
         return ans;
     }
 
-    static int search(int[] nums, int target, boolean findStartIndex) {
+    static int search(int[] nums, int target, boolean leftSide) {
         int ans = -1;
         int start = 0;
         int end = nums.length - 1;
@@ -31,7 +31,7 @@ public class SearchRange {
                 end = mid - 1;
             } else {
                 ans = mid;
-                if (findStartIndex) {
+                if (leftSide) {
                     end = mid - 1; // Move left to find first occurrence
                 } else {
                     start = mid + 1; // Move right to find last occurrence
