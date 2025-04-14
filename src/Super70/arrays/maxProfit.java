@@ -1,5 +1,7 @@
 package Super70.arrays;
 
+import java.util.Arrays;
+
 public class maxProfit {
     public static void main(String[] args) {
         int a[] = {1,2,0,5,7,17};
