@@ -16,7 +16,7 @@ public class evenDigits {
         return count;
     }
 
-     static boolean even(int i) {  //
+     static boolean even(int i) {
         int count =0;
         while(i > 0) {
             i = i/10;
