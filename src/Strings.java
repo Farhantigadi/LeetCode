@@ -1,6 +1,6 @@
 public class Strings {
     public static void main(String[] args) {
-        boolean result = issPallindrome("A man, a plan, a canal: Panama");
+        boolean result = issPallindrome("pip");
         System.out.println(result);
     }
     static boolean issPallindrome(String s){
