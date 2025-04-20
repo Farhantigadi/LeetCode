@@ -4,7 +4,7 @@ package BinarySearch;
 public class smallestLetterCharacter {
     public static void main(String[] args) {
         char[] arr={'a','b','c','d','e','g','i'};
-        System.out.println(nextGreatestLetter(arr,'e'));
+        System.out.println(nextGreatestLetter(arr,'z'));
     }
     public static char nextGreatestLetter(char[] letters, char target) {
         int start = 0;
@@ -17,7 +17,7 @@ public class smallestLetterCharacter {
                 end = mid - 1;
             }
         }
-        return (char) letters[start % letters.length]; // to return first character if no smallest character present greatest than given character
+        return (char) letters[start % letters.length]; // to return first character if no smallest character present greatest than given character as start % letters.length will provide same answer
     }
 }
 
