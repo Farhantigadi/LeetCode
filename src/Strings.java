@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Strings {
     public static void main(String[] args) {
         boolean result = issPallindrome("pip");

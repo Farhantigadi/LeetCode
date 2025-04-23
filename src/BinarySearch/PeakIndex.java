@@ -1,8 +1,8 @@
 package BinarySearch;
-
+//peak index in mountain array
 public class PeakIndex {
     public static void main(String[] args) {
-        int [] arr = {0,1,2,4,5,8,3,2,1,0};
+        int [] arr = {2,4,6,8,10,7,6,4,1};
         System.out.println(peak(arr));
     }
     public  static int peak(int arr[]) {
@@ -17,6 +17,6 @@ public class PeakIndex {
              start = mid+1;
          }
         }
-      return arr[end];
+      return arr[start];
     }
 }
