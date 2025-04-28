@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class SearchRange {
     public static void main(String[] args) {
         int[] arr = {2, 5, 8, 7, 7, 7, 8, 8};
-        System.out.println(Arrays.toString(searchRange(arr, 7)));
+        System.out.println(Arrays.toString(searchRange(arr, 8)));
     }
 
     static int[] searchRange(int[] nums, int target) {

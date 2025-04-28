@@ -17,6 +17,7 @@ public class PeakIndex {
              start = mid+1;
          }
         }
-      return arr[start];
+        //arr[start]; wiil have same answer
+      return arr[end];
     }
 }
