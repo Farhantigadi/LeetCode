@@ -6,8 +6,8 @@ import java.util.EnumSet;
 
 public class InfiniteArray {
     public static void main(String[] args) {
-        int nums [] ={ 3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170};
-        System.out.println(ans(nums,10));
+        int nums [] ={ 3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170,180,200,220,240,260,300,350,380,400,500,550,620,680,750,777};
+        System.out.println(ans(nums,300));
     }
     static int ans(int [] nums,int target) {
 int start =0;
@@ -16,7 +16,7 @@ while (target>nums[end]){
     //here start is not used beacuse in the next step we need to have the previous start value
     int newstart = end+1;
     //end = previous end + size of current box * 2
-    // here +1 bcz ,suppose strat and end are at same position and we need to find size of the box so s-end will be 0 but there is one element so therefore +1 is added
+    // here +1 bcz ,suppose strat and end are at same position, we need to find size of the box so s-end will be 0 but there is one element  therefore +1 is added
     end = end + (end - start +1) *2;
     start = newstart;
 }
@@ -37,3 +37,4 @@ return  binarysearch(nums,target,start,end);
         return -1;
     }
 }
+
